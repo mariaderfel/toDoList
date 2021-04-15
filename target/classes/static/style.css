@@ -1,0 +1,9 @@
+.errorClass {
+    color: hotpink;
+}
+
+input,select{
+    float: end;
+    width: 200px;
+    margin-top: 10px;
+}

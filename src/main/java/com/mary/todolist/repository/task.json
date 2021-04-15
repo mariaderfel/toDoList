@@ -1,0 +1,102 @@
+[
+  {
+    "term": {
+      "year": 2021,
+      "month": 1,
+      "day": 31
+    },
+    "priority": 3,
+    "category": "HOUSE",
+    "description": "iron"
+  },
+  {
+    "term": {
+      "year": 2021,
+      "month": 1,
+      "day": 31
+    },
+    "priority": 4,
+    "category": "FRIENDS",
+    "description": "meeting"
+  },
+  {
+    "term": {
+      "year": 2021,
+      "month": 2,
+      "day": 7
+    },
+    "priority": 5,
+    "category": "WORK",
+    "description": "Ex10"
+  },
+  {
+    "term": {
+      "year": 2021,
+      "month": 2,
+      "day": 2
+    },
+    "priority": 1,
+    "category": "HOUSE",
+    "description": "wash the dishes"
+  },
+  {
+    "term": {
+      "year": 2021,
+      "month": 2,
+      "day": 5
+    },
+    "priority": 4,
+    "category": "HOBBY",
+    "description": "print new crochet pattern"
+  },
+  {
+    "term": {
+      "year": 2021,
+      "month": 2,
+      "day": 2
+    },
+    "priority": 4,
+    "category": "HOUSE",
+    "description": "shopping"
+  },
+  {
+    "term": {
+      "year": 2021,
+      "month": 2,
+      "day": 7
+    },
+    "priority": 5,
+    "category": "FAMILY",
+    "description": "name day"
+  },
+  {
+    "term": {
+      "year": 2021,
+      "month": 3,
+      "day": 13
+    },
+    "priority": 3,
+    "category": "FRIENDS",
+    "description": "spacer"
+  },
+  {
+    "term": {
+      "year": 2021,
+      "month": 3,
+      "day": 20
+    },
+    "priority": 5,
+    "category": "WORK",
+    "description": "work"
+  },
+  {
+    "term": {
+      "year": 2021,
+      "month": 3,
+      "day": 27
+    },
+    "priority": 1,
+    "category": "WORK",
+    "description": "do"
+  }
+]

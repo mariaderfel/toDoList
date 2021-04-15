@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>To Do List</title>
+</head>
+
+<body>
+<div class="container-sm">
+    <br/>
+    <h1 class="display-6">DON'T FORGET ANYTHING</h1>
+    <br/>
+    <table class="table table-bordered">
+        <tr>
+            <td><a href="/highest-priority">tasks with the highest priority</a></td>
+            <td><a href="/next-day">tasks for next day</a></td>
+            <td><a href="/by-priority">sorted by priority</a></td>
+            <td><a href="/by-date">sorted by date</a></td>
+            <td><a href="/category">task for choose category</a></td>
+        </tr>
+        <tr>
+            <td><a href="/description">task with description</a></td>
+            <td><a href="/urgent">the most urgent task</a></td>
+            <td><a href="/by-category-map">task by category</a></td>
+            <td><a href="/by-priority-map">task by priority</a></td>
+            <td><a href="/highest-priority-for-category-map">task with highest priority from each category</a></td>
+        </tr>
+
+    </table>
+
+    <p class="display-11">to-do list:</p>
+
+    <table class="table table-bordered" th:each="task : ${tasks}">
+        <tbody>
+        <tr class="border border-secondary">
+            <th>Key</th>
+            <td class="table-active"><span th:text="${task.getKey()}" class="btn btn-dark"></span></td>
+        </tr>
+        <tr class="border border-secondary">
+            <th>Value</th>
+            <td class="table-active" th:text="${task.getValue()}"></td>
+        </tr>
+
+        </tbody>
+    </table>
+    <a href="/">back to main view</a>
+</div>
+</body>
+</html>

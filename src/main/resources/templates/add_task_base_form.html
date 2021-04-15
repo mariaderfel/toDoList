@@ -1,0 +1,43 @@
+<html xmlns:th="http://www.thymeleaf.org" lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" th:href="@{../style.css}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <title>To-do list</title>
+
+</head>
+<body>
+<div class="container-sm">
+    <br/>
+    <h1 class="display-6">DON'T FORGET ANYTHING</h1>
+    <p class="display-9">Add task to to-do list:</p>
+
+    <form action="/add_task_to_base" method="post" th:object="${newTask}" th:action="@{/add_task_to_base}">
+        <p>Date:
+            <input type="date" th:field="*{term}"/>
+            <span class="errorClass" th:if="${#fields.hasErrors('term')}" th:errors="*{term}"></span>
+        </p>
+
+        <p>Priority:
+            <input type="number" min="1" max="5" th:field="*{priority}"></p>
+
+        <p>Category:
+            <select class="paddingClass" th:field="*{category}">
+                <option th:each="element: ${categories}" th:value="${element}" th:text="${element.name}"/>
+            </select>
+        </p>
+
+        <p>Description:
+            <textarea rows="5" cols="30" th:field="*{description}"></textarea>
+            <span class="errorClass" th:if="${#fields.hasErrors('description')}" th:errors="*{description}"></span>
+        </p>
+
+        <button type="submit" class="btn btn-outline-dark">Add task to base</button>
+    </form>
+
+    <br/>
+    <a href="/">back to to-do list </a>
+</div>
+</body>
+</html>
